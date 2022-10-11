@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="images/logo.png" class="logo" />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li>
+              <a href="#about">About</a>
+            </li>
+            <li>
+              <a href="#services">Skills</a>
+            </li>
+            <li>
+              <a href="#portfolio">Portfolio</a>
+            </li>
+            <li>
+              <a href="#contact">Contact</a>
+            </li>
+            <i class="fa-solid fa-x" onclick="closemenu()"></i>
+          </ul>
+
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>Full Stack Developer</p>
+          <h1>Hi, I'm <span>Nico Wiranata</span> <br />MERN Stack Developer</h1>
+        </div>
+      </div>
+    </div>
+
+    <!-- -------------ABOUT---------- -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <div class="img1-holder">
+              <img src="Images/about2.png" alt="" />
+            </div>
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
+              corporis dolorem quo est eos fuga minima inventore eaque
+              excepturi, molestiae laboriosam ipsa esse laborum. Nam
+              necessitatibus ipsa exercitationem officia, ducimus aliquam ipsam
+              explicabo eaque ex sapiente veniam qui, illo officiis.
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>Frontend/Backend </span><br />
+                  Fullstack Developer
+                </li>
+                <li>
+                  <span>Frontend/Backend </span><br />
+                  Fullstack Developer
+                </li>
+                <li>
+                  <span>Frontend/Backend </span><br />
+                  Fullstack Developer
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>2020 </span><br />
+                  Fullstack Developer
+                </li>
+                <li>
+                  <span>2021</span><br />
+                  Fullstack Developer
+                </li>
+                <li>
+                  <span>2022</span><br />
+                  Fullstack Developer
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>STMIK</span><br />
+                  Fullstack Developer
+                </li>
+                <li>
+                  <span>King's Own Institute </span><br />
+                  Fullstack Developer
+                </li>
+                <li>
+                  <span>Dented Code</span><br />
+                  Fullstack Developer
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- -------------Services-------------- -->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-sharp fa-solid fa-code"></i>
+            <h2>Web Developer</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Assumenda qui repudiandae ea quae modi fugit impedit voluptatibus
+              minima rerum ut.
+            </p>
+            <a href="#">Learn More</a>
+          </div>
+          <div>
+            <i class="fa-sharp fa-solid fa-crop-simple"></i>
+            <h2>App Design</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Assumenda qui repudiandae ea quae modi fugit impedit voluptatibus
+              minima rerum ut.
+            </p>
+            <a href="#">Learn More</a>
+          </div>
+          <div>
+            <i class="fa-brands fa-adn"></i>
+            <h2>Fullstack Developer</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Assumenda qui repudiandae ea quae modi fugit impedit voluptatibus
+              minima rerum ut.
+            </p>
+            <a href="#">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ---------------------Portfolio----------------- -->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="Images/mern01.jpg" />
+            <div class="layer">
+              <h3>Mern Full Stack</h3>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Impedit porro, reprehenderit delectus modi, veritatis eveniet
+                ducimus hic saepe atque eos ab nostrum quis quasi veniam
+                provident mollitia, in ipsa amet.
+              </p>
+              <a href="#"><i class="fa-solid fa-link"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="Images/mern02.jpg" />
+            <div class="layer">
+              <h3>Mern Full Stack</h3>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Impedit porro, reprehenderit delectus modi, veritatis eveniet
+                ducimus hic saepe atque eos ab nostrum quis quasi veniam
+                provident mollitia, in ipsa amet.
+              </p>
+              <a href="#"><i class="fa-solid fa-link"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="Images/mern03.jpg" />
+            <div class="layer">
+              <h3>Mern Full Stack</h3>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Impedit porro, reprehenderit delectus modi, veritatis eveniet
+                ducimus hic saepe atque eos ab nostrum quis quasi veniam
+                provident mollitia, in ipsa amet.
+              </p>
+              <a href="#"><i class="fa-solid fa-link"></i></a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+      </div>
+    </div>
+
+    <!-- -------------Contact---------------->
+
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fa-solid fa-envelope"></i>nicowiranata@gmail.com</p>
+            <p><i class="fa-solid fa-phone"></i>0451538990</p>
+            <div class="social-icons">
+              <a href="https://facebook.com/"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+              <a href=""><i class="fa-brands fa-twitter"></i></a>
+              <a href=""><i class="fa-brands fa-linkedin"></i></a>
+              <a href=""><i class="fa-brands fa-twitter"></i></a>
+            </div>
+            <a href="Images/NicoWiranata.pdf" download class="btn btn2"
+              >Download CV</a
+            >
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>Copyright ©️ Nico, Made with Love ❤️ 2022</p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
